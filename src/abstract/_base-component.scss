@@ -1,0 +1,23 @@
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 16px;
+
+    @include respond(xl) {
+        max-width: 1024px;
+    }
+
+    @include respond(xlg) {
+        max-width: 992px;
+    }
+
+    @include respond(lg) {
+        max-width: 768px;
+    }
+
+    @include respond(sm) {
+        max-width: 768px;
+    }
+}
+
