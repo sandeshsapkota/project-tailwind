@@ -3,23 +3,44 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="dist/app.css">
-    <link rel="stylesheet" href="dist/tailwind.css">
-</head>
-<body class="bg-gray-1">
-<div class="form-group">
-    <div>
-        <label class="tooltip__label">Date Of Birth
-            <div class="tooltip__wrapper">
-                <span class="tooltip__icon">i</span>
-                <div class="tooltip">
-                    Applicant is requested to fill date of birth here.
-                </div>
-            </div>
-        </label>
-    </div>
-    <input type="text" class="form-control" placeholder="Date Of Birth">
-</div>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="dist/tailwind.css">
+    <link rel="stylesheet" href="dist/app.css">
+</head>
+<body>
+<div class="p-8">
+    <button class="btn btn--toggle btn-toggle-js flex text-sm font-medium" >
+        <span class="toggle-trigger-js">A</span>
+        <span class="toggle-trigger-js toggle-active">B</span>
+        <span class="toggling-layer"></span>
+    </button>
+</div>
+<section class="banner px-6 py-12">
+    <div class="w-1/2">
+        <div class="passage-block">
+            <h1 class="heading-primary">
+                What’s all this then?
+            </h1>
+            <p> Mosh is one of Australia’s leading online mens’ health clinics. Based in Sydney’s Bondi, they provide men with virtual consultations led by healthcare experts on issues such as sexual health and hair loss. Ahead of expanding their offering to skincare and mental health in 2020, they approached us for a brand refresh.
+            </p>
+        </div>
+        <div class="passage-block mt-8">
+            <h2 class="heading-primary">
+                Any insights?
+            </h2>
+            <p>
+                Mosh found in their research that people, men especially, take comfort from editorial publications — they have inherent trust, integrity and authority. Given the brand deals with sensitive subject matters for men (who often need a little extra encouragement to seek health help anyway), building trust and being informative without feeling belittling was key.
+            </p>
+        </div>
+    </div>
+    <button class="btn btn--toggle btn-toggle-js flex text-sm font-medium">
+        <span class="toggle-trigger-js">Less</span>
+        <span class="toggle-trigger-js toggle-active">More</span>
+        <span class="toggling-layer"></span>
+    </button>
+</section>
+<script src="dist/app.js"></script>
 </body>
 </html>

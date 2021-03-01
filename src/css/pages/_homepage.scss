@@ -1,0 +1,60 @@
+:root {
+    --color-base-1: #2e3133;
+    --color-base-2: #3A3E40;
+    --color-base-3: #44484B;
+    --color-base-4: #4E5256;
+    --color-base-5: #575D60;
+    --color-white: #fff;
+}
+
+body {
+    font: 500 16px/1.5 'Space Grotesk', sans-serif;
+    color: var(--color-base-5);
+    background: #CCD8D7;
+}
+
+.heading-primary {
+    margin-bottom: 24px;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--color-base-1);
+}
+
+.btn {
+    background: var(--color-white);
+    border: 1px solid var(--color-base-1);
+}
+
+.btn--toggle {
+    position: relative;
+    padding: 2px;
+    border-radius: 50px;
+    overflow: hidden;
+    letter-spacing: .5px;
+
+    span {
+        padding: 8px 12px;
+    }
+
+    .toggle-active {
+        color: var(--color-white);
+    }
+}
+
+.banner .btn{
+    position: fixed;
+    bottom: 40px;
+    right: 23px;
+}
+
+.toggling-layer {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    z-index: -1;
+    height: 100%;
+    width: 50%;
+    background: var(--color-base-2);
+    border-radius: 50px;
+    transition: .3s;
+}

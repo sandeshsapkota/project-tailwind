@@ -115,76 +115,54 @@ input:focus, button:focus {
 }
 
 :root {
-  --color-base-1: #5c6265;
-  --color-base-2: #2e3133;
-  --color-base-3: #8b9498;
+  --color-base-1: #2e3133;
+  --color-base-2: #3A3E40;
+  --color-base-3: #44484B;
+  --color-base-4: #4E5256;
+  --color-base-5: #575D60;
   --color-white: #fff;
 }
 
 body {
+  font: 500 16px/1.5 "Space Grotesk", sans-serif;
+  color: var(--color-base-5);
   background: #CCD8D7;
-  color: var(--color-base-2);
 }
 
-.tooltip {
-  position: absolute;
-  left: -32px;
-  bottom: 150%;
-  padding: 8px;
-  width: 300px;
-  background: var(--color-white);
-  box-shadow: 0 4px 8px 0 rgba(var(--color-base-2-rgb), 0.16);
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.3s;
-  border-radius: 4px;
-}
-.tooltip:before {
-  content: "";
-  height: 10px;
-  width: 10px;
-  position: absolute;
-  left: 40px;
-  bottom: -6px;
-  transform: rotate(45deg);
-  background: var(--color-white);
-}
-.tooltip__wrapper {
-  position: relative;
-}
-.tooltip__wrapper:hover .tooltip {
-  visibility: visible;
-  opacity: 1;
-}
-.tooltip__label {
+.heading-primary {
+  margin-bottom: 24px;
+  font-size: 22px;
   font-weight: 500;
-  cursor: pointer;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  margin-bottom: 4px;
-}
-.tooltip__icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 15px;
-  width: 15px;
-  margin-left: 6px;
-  background: var(--color-base-1);
-  border-radius: 50%;
-  color: var(--color-white);
-  font-size: 11px;
+  color: var(--color-base-1);
 }
 
-.form-group {
-  margin: 72px 24px 0;
-  width: 20%;
+.btn {
+  background: var(--color-white);
+  border: 1px solid var(--color-base-1);
 }
-.form-control {
-  background: #fff;
-  padding: 8px 12px;
-  border: 1px solid var(--color-border);
-  border-radius: 6px;
-  width: 100%;
+
+.btn--toggle {
+  position: fixed;
+  bottom: 40px;
+  right: 23px;
+  padding: 1px;
+  border-radius: 50px;
+  overflow: hidden;
+  letter-spacing: 0.5px;
+}
+.btn--toggle span {
+  padding: 6px 12px;
+}
+.btn--toggle .toggle-active {
+  color: var(--color-white);
+}
+
+.toggling-layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  height: 100%;
+  width: 50%;
+  background: var(--color-base-2);
 }
