@@ -1,5 +1,6 @@
 {
     "/dist/app.js": "/dist/app.js",
+    "/dist/smoothscroll.js": "/dist/smoothscroll.js",
     "/dist/tailwind.css": "/dist/tailwind.css",
     "/dist/app.css": "/dist/app.css"
 }
